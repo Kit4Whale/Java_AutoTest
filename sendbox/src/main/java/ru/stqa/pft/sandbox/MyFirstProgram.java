@@ -6,23 +6,14 @@ public class MyFirstProgram {
 		hello("user");
 		hello("Nikita");
 
-		double len = 5;
-		System.out.println("Площадь квадрата со стороной " + len + " = " + area(len));
+		Square s = new Square(5);
+		System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-		double q = 2;
-		double w = 4;
-		System.out.println("Площадь прямоугольника со сторнами " + q + " и " + w + " = " + area(q, w));
+		Rectangle r = new Rectangle(2, 4);
+		System.out.println("Площадь прямоугольника со сторнами " + r.a + " и " + r.b + " = " + r.area());
 	}
 
 	public static void hello (String somebody) {
 		System.out.println("Hello, " + somebody + "!");
-	}
-
-	public static double area (double l) {
-		return l * l;
-	}
-
-	public static double area (double a, double b) {
-		return a * b;
 	}
 }
